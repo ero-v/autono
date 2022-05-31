@@ -915,6 +915,10 @@
 }
 
 @media only screen and (max-width: 660px) {
+    .header {
+        padding: 0 25px;
+    }
+
     .header div {
         display: none;
     }
