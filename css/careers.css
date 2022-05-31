@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 89px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header > a {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header > a:visited {
+    color: black;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.header div a {
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.header div a:hover {
+    color: rgb(189, 152, 2);
+}
+
+.header div a:visited {
+    color: black;
+}
+
+.header div button {
+    cursor: pointer;
+    width: 140px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transition-duration: 0.2s;
+    border-radius: 5px;
+}
+
+.header div button:hover {
+    color: black;
+    background-color: white;  
+}
+
+.header img {
+    display: none;
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.make-container {   
+    margin-top: 89px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 70px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.make-container h3 {
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.make-container h4 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 33px;
+    margin-top: 60px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-title-container {
+    padding-left: 200px;
+    display: flex;
+}
+
+.location-line {
+    width: 1px;
+    height: 490px;
+    background-color: black;
+    margin-right: 50px; 
+    position: relative;
+}
+
+.location-line-inner {
+    width: 2px;
+    height: 90px;
+    background-color: black;
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+.location-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(74 74 74);
+}
+
+.location-title-2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 100px;
+    width: 295px; 
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.location-title-3 {
+    color: rgb(74 74 74);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 100px;
+    width: 300px; 
+    line-height: 35px;
+}
+
+.location-img {
+    width: 760px;
+    height: 760px;
+}
+
+.job-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.job-title-container {
+    padding-left: 200px;
+    display: flex;
+}
+
+.job-line {
+    width: 1px;
+    height: 530px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 50px; 
+    position: relative;
+}
+
+.job-line-inner {
+    width: 2px;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+.job-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.job-title-2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 100px;
+    width: 295px; 
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.job-title-3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 100px;
+    width: 300px; 
+    line-height: 35px;
+}
+
+.job-img {
+    width: 760px;
+    height: 760px;
+}
+
+.engineer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ 
+ .engineer {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 420px;
+    height: 504px;
+    padding-left: 40px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .engineer-title {
+    font-size: 18px;
+    width: 360px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 6px;
+    color: white;
+ }
+
+ .engineer-title-3 {
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+    margin-top: 80px;
+ }
+ 
+ .engineer-title-2 {
+    font-size: 16px;
+    width: 326px;
+    font-weight: 500;
+    line-height: 25px; 
+    letter-spacing: 1px;
+    color:  #ffffff;;
+    margin-top: 10px;
+    flex: 1;
+ }
+
+ .more-button {
+    cursor: pointer;
+    color: white;
+    width: 140px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    transition-duration: 0.3s;
+    border: none;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.more-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255); 
+}
+
+.more-button-icon {
+    width: 16px;
+    height: 16px;
+    margin: 0 13px;   
+}
+
+.more-button-container {
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 162px;
+    align-items: center;
+}
+
+.looking-container {
+    background-color: black;
+    padding-left: 200px;
+    padding-bottom: 250px;
+}
+
+
+.looking {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 420px;
+    height: 350px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+ }
+ 
+ .looking-title {
+    font-size: 24px;
+    width: 300px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+ }
+
+ .looking-button {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    width: 140px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    border: none;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.looking-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0); 
+}
+
+.looking-button-icon {
+    width: 16px;
+    height: 16px;
+    margin: 0 13px;   
+}
+
+.looking-button-container {
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 162px;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.footer-top {
+    height: 528px;
+    padding-top: 97px;
+    padding-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 250px;
+}
+
+.footer-info h1 {
+    font-size: 20px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.footer-info div {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer-info p {
+    width: 200px;
+    font-weight: 500;
+}
+
+.footer-subscribe h1 {
+    font-size: 18px;
+    font-weight: inherit;
+    letter-spacing: 2px;
+}
+
+.footer-subscribe h3 {
+    font-size: 16px;
+    margin-top: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer-subscribe label {
+    font-size: 16px;
+    margin-top: 50px;
+    display: block;
+}
+
+.footer-subscribe div {
+    margin-top: 30px;
+    position: relative;
+}
+
+.footer-subscribe input {
+    width: 380px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 20px;
+}
+
+.footer-subscribe input:hover {
+    background-color: #dcdcdc;
+}
+
+.footer-subscribe button {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.footer-subscribe button:hover {
+    color: black;
+    background-color: white;  
+}
+
+.footer-bottom {
+    padding-bottom: 60px;
+    padding-left: 190px;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom > div a {
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+.footer-bottom h3 {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 660px) {
+    .header div {
+        display: none;
+    }
+
+    .header img {
+        display: block;
+    }
+}
