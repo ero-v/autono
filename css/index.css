@@ -218,6 +218,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   flex-wrap: wrap-reverse;
 }
 
 .autonom {
@@ -243,8 +244,10 @@
 }
 
 .autonom-img {
-     width: 760px;
-     height: 680px;
+    width: 61%;
+    height: 840px;
+    object-fit: contain;
+    min-width: 300px;
 }
 
 .more-button {
@@ -283,11 +286,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .real-time-img {
-    width: 760px;
-    height: 680px;
+    width: 61%;
+    height: 840px;
+    object-fit: contain;
+    min-width: 300px;
 }
 
 .real {
@@ -924,6 +930,21 @@
         padding-left: 100px;
         padding-right: 20px;
     }
+
+    .autonom-img {
+        height: 400px;
+    }
+
+    .real-time-img {
+        height: 400px;
+        padding-left: 35px;
+    }
+
+    .real {
+        padding-left: 100px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -959,6 +980,31 @@
     .concept-title-container {
         padding-left: 40px;
     }
+
+    .autonom {
+        margin-left: 70px;
+        padding-bottom: 20px;
+    }
+
+    .autonom-title {
+        width: auto;
+        padding-right: 10px;
+        font-size: 25px;
+    }
+
+    .autonom-title-2 {
+        width: auto;
+        padding-right: 10px;
+    }
+
+    .services-container {
+        padding-left: 40px;
+    }
+
+    .real {
+        padding-left: 20px;
+        margin-right: 0;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -973,5 +1019,23 @@
     .video-text-subtitle {
         font-size: 12px;
         margin-top: 6px;
+    }
+
+    .autonom {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+
+    .services-title-2 {
+        width: auto;
+        padding-right: 10px;
+    }
+
+    .real-time {
+        font-size: 25px;
+    }
+
+    .real-time-2 {
+        font-size: 15px;
     }
 }
