@@ -170,7 +170,7 @@
 }
 
 .concept-img {
-    width: 61%;
+    width: 51%;
     height: 840px;
     object-fit: contain;
     min-width: 300px;
@@ -244,7 +244,7 @@
 }
 
 .autonom-img {
-    width: 61%;
+    width: 51%;
     height: 840px;
     object-fit: contain;
     min-width: 300px;
@@ -290,7 +290,7 @@
 }
 
 .real-time-img {
-    width: 61%;
+    width: 51%;
     height: 840px;
     object-fit: contain;
     min-width: 300px;
@@ -351,6 +351,7 @@
     align-items: center;
     padding-left: 200px;
     padding-bottom: 120px;
+    flex-wrap: wrap-reverse;
 }
 
 .more-button-3 {
@@ -404,8 +405,10 @@
 }
 
 .aspect-img {
-    width: 760px;
-    height: 680px;
+    width: 51%;
+    height: 840px;
+    object-fit: contain;
+    min-width: 300px;
 }
 
 .why-autono-container {
@@ -945,6 +948,18 @@
         padding-right: 20px;
         padding-bottom: 20px;
     }
+
+    .aspect-img {
+        height: 400px;
+    }
+
+    .aspect-container {
+        padding-left: 60px;
+    }
+
+    .why-autono-container {
+        padding-left: 100px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -1005,6 +1020,54 @@
         padding-left: 20px;
         margin-right: 0;
     }
+
+    .aspect {
+        margin-left: 70px;
+        padding-bottom: 20px;
+    }
+
+    .aspect-title {
+        width: auto;
+        padding-right: 10px;
+        font-size: 25px;
+    }
+
+    .aspect-title-2 {
+        padding-right: 10px;
+        margin-top: 30px;
+        width: auto;
+    }
+
+    .aspect-container {
+        padding-left: 10px;
+    }
+
+    .why-autono-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .why-autono {
+        width: auto;
+        padding-right: 20px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    
+    .autono-title-3 {
+        width: auto;
+    }
+
+    .autono-title-2 {
+        width: auto;
+    }
+
+    .autono-title {
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1037,5 +1100,10 @@
 
     .real-time-2 {
         font-size: 15px;
+    }
+
+    .aspect {
+        margin-left: 0;
+        padding-left: 15px;
     }
 }
