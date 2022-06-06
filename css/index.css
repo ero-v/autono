@@ -514,11 +514,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .autono-in-numbers img {
-    width: 760px;
-    height: 760px;
+    width: 51%;
+    height: 840px;
+    object-fit: contain;
+    min-width: 300px;
+}
+
+.autono {
+    flex: 1;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .autono-in-numbers h1 {
@@ -530,11 +539,12 @@
 
 .autono-in-numbers > div > div {
     display: flex;
-    margin-bottom: 110px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .autono-in-number {
-    margin-right: 110px;
+    margin-bottom: 110px;
 }
 
 .autono-in-number h2 {
@@ -960,6 +970,11 @@
     .why-autono-container {
         padding-left: 100px;
     }
+
+    .autono-in-numbers img {
+        height: 400px;
+        margin-left: 60px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -1067,6 +1082,15 @@
 
     .autono-title {
         width: auto;
+    }
+
+    .autono {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .autono-in-numbers img {
+        margin-left: 10px;
     }
 }
 
