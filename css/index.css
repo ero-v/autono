@@ -582,11 +582,19 @@
     display: flex;
     justify-content: space-between;
     padding-top: 150px;
+    flex-wrap: wrap;
 }
 
 .industry-title-container {
     padding-left: 200px;
     display: flex;
+    margin-bottom: 40px;
+}
+
+.industry-features-container {
+    flex: 1;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .industry-line {
@@ -634,16 +642,17 @@
 
 .industry-features {
     display: flex;
-    margin-bottom: 150px;
+    justify-content: space-between;
 }
 
 .industry-features > div {
-    margin-right: 155px;
-    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     width: 185px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
 }
 
 .industry-features > div > h3 {
@@ -975,6 +984,15 @@
         height: 400px;
         margin-left: 60px;
     }
+
+    .industry-title-container {
+        padding-left: 70px;
+    }
+
+    .industry-features-container {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -1092,6 +1110,15 @@
     .autono-in-numbers img {
         margin-left: 10px;
     }
+
+    .industry-features {
+        padding-top: 60px;
+    }
+
+    .industry-features-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1129,5 +1156,25 @@
     .aspect {
         margin-left: 0;
         padding-left: 15px;
+    }
+
+    .industry-title-container {
+        padding-left: 25px;
+    }
+
+    .industry-features {
+        display: block;
+    }
+
+    .industry-features-container {
+        padding-left: 35px;
+    }
+
+    .industry-features > div {
+        margin-top: 40px;
+    }
+
+    .industry-line {
+        margin-right: 18px;
     }
 }
