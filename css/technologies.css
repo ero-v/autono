@@ -112,6 +112,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .automobile-title-container {
@@ -153,8 +156,10 @@
 }
 
 .automobile-img {
-    width: 760px;
+    width: 50%;
     height: 840px;
+    object-fit: contain;
+    min-width: 300px;
 }
 
 .user-container {
@@ -163,6 +168,7 @@
     display: flex;
     justify-content: space-around;
     padding-bottom: 100px;
+    flex-wrap: wrap;
 }
 
 .user-container h2 {
@@ -184,6 +190,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap-reverse;
+    padding-bottom: 30px;
 }
 
 .digital-title-container {
@@ -223,14 +231,17 @@
 }
 
 .digital-img {
-    width: 760px;
+    width: 50%;
     height: 840px;
+    object-fit: contain;
+    min-width: 300px;
 }
 
 .security-container {
     display: flex;
     justify-content: space-around;
     padding-bottom: 100px;
+    flex-wrap: wrap;
 }
 
 .security-container h2 {
@@ -356,6 +367,14 @@
     .footer-bottom {
         padding-left: 60px;
     }
+
+    .automobile-img {
+        height: 500px;
+    }
+
+    .automobile-title-container {
+        padding-left: 30px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -398,6 +417,23 @@
         line-height: 30px;
     }
 
+    
+    .user-container h2 {
+        margin-top: 20px;
+    }
+
+    .digital-title-container {
+        padding-left: 20px;
+    }
+
+    .security-container h2 {
+        margin-top: 55px;
+    }
+
+    .digital-img {
+        height: 500px;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -418,5 +454,26 @@
 
     .perceptions-container img {
         height: 400px;
+    }
+
+    .automobile-title-2 {
+        width: auto;
+    }
+
+    .user-container h2 {
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .user-container h3 {
+        padding-left: 20px;
+    }
+    
+    .digital-title-2 {
+        width: auto;
+    }
+
+    .security-container h3 {
+        padding-left: 10px;
     }
 }
