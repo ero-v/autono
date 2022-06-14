@@ -80,12 +80,15 @@
     align-items: center;
     padding-bottom: 100px;
     padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .journey-container h3 {
     font-weight: 500;
     font-size: 64px;
     letter-spacing: 10px;
+    text-align: center;
 }
 
 .journey-container h4 {
@@ -100,6 +103,7 @@
 
 .mission-container {
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 70px;
@@ -154,8 +158,10 @@
 }
 
 .mission-img {
-    width: 400px;
-    height: 616px;
+    width: 35%;
+    height: 840px;
+    object-fit: contain;
+    min-width: 300px;
     border-radius: 30px;
 }
 
@@ -399,6 +405,16 @@
     letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .mission-container {
+        padding-left: 100px;
+    }
+
+    .mission-title-container {
+        margin-top: 50px;
+    }
+}
+
 @media only screen and (max-width: 660px) {
     .header div {
         display: none;
@@ -406,5 +422,32 @@
 
     .header img {
         display: block;
+    }
+
+    .journey-container h4 {
+        width: auto;
+    }
+
+    .mission-img {
+        height: 400px;
+    }
+
+    
+    .mission-container {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .journey-container h3 {
+        font-size: 20px;
+    }
+
+    .mission-container {
+        padding-left: 5px;
+    }
+
+    .mission-title-3 {
+        width: auto;
     }
 }
