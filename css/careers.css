@@ -101,6 +101,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 .location-title-container {
@@ -151,8 +152,10 @@
 }
 
 .location-img {
-    width: 760px;
+    width: 50%;
     height: 760px;
+    object-fit: contain;
+    min-width: 300px;
 }
 
 .job-container {
@@ -455,6 +458,25 @@
     letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .make-container h3 {
+        font-size: 50px;
+    }
+
+    .location-img {
+        height: 400px;
+    }
+
+    .location-title-container {
+        padding-left: 70px;
+    }
+
+    .location-container {
+        padding-top: 20px;
+    }
+
+}
+
 @media only screen and (max-width: 660px) {
     .header div {
         display: none;
@@ -462,5 +484,36 @@
 
     .header img {
         display: block;
+    }
+
+    .make-container h3 {
+        font-size: 40px;
+    }
+
+    .location-title-container {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .make-container h3 {
+        font-size: 30px;
+    }
+
+    .location-title-container {
+        padding-left: 9px;
+    }
+
+    .location-line {
+        margin-right: 10px;
+    }
+
+    .location-title-2 {
+        padding-right: 9px;
+    }
+
+    .location-title-3 {
+        padding-bottom: 20px;
+        padding-right: 20px;
     }
 }
